@@ -1,0 +1,74 @@
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{accsupp}	
+\newcommand{\emptyaccsupp}[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
+\usepackage{listings}
+\title{中国银行Python数据分析课程-第一天}
+\author{作者：江浩}
+\definecolor{commentcolor}{RGB}{85,139,78}
+\definecolor{stringcolor}{RGB}{206,145,108}
+\definecolor{keywordcolor}{RGB}{34,34,250}
+\definecolor{backcolor}{RGB}{220,220,220}
+
+\lstset{						%高亮代码设置
+	language=python, 					%Python语法高亮
+	linewidth=0.9\linewidth,      		%列表list宽度
+	%basicstyle=\ttfamily,				%tt无法显示空格
+	commentstyle=\color{commentcolor},	%注释颜色
+	keywordstyle=\color{keywordcolor},	%关键词颜色
+	stringstyle=\color{stringcolor},	%字符串颜色
+	%showspaces=true,					%显示空格
+	numbers=left,						%行数显示在左侧
+	numberstyle=\tiny\emptyaccsupp,		%行数数字格式
+	numbersep=5pt,						%数字间隔
+	frame=single,						%加框
+	framerule=0pt,						%不划线
+	escapeinside=@@,					%逃逸标志
+	emptylines=1,						%
+	xleftmargin=3em,					%list左边距
+	backgroundcolor=\color{backcolor},	%列表背景色
+	tabsize=4,							%制表符长度为4个字符
+	gobble=4							%忽略每行代码前4个字符
+}
+
+\date{\today}
+\begin{document}
+\maketitle
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=1.0]{images/python-logo.png}
+\end{figure}
+\tableofcontents
+
+\section{Python的安装}
+	\subsection{下载}
+	\begin{enumerate}
+		\item 下载地址
+		\item 安装步骤
+	\end{enumerate}
+\section{Python的启动运行}
+\section{Python的脚本文件模式}
+\begin{lstlisting}
+	import pandas as pd 
+	print("as")
+\end{lstlisting}
+教学目标：
+1.	掌握Python环境搭建，常用的IDE环境使用。
+2.	掌握模块的安装和导入，pip安装时候的重定向镜像主机参数使用。
+3.	掌握使用pandas创建和读取xlsx,csv等常用表格文件。
+4.	掌握几种简单的数据类型。
+课程内容：
+		1.Python介绍环境安装
+		2.Jupyter notebook及插件安装配置和启动等常规操作
+		3.pandas读写xlsx文件。
+		4.DataFrame初步认识。
+		5.整形、浮点型、字符串、字典类型等数据类型掌握。
+课程实践：
+		本课实践内容通过pandas实现xlsx,csv读取并对表格数据进行修改，然后保存到新的表格文件中。该实践内容报表自动化生成任务、拆分表格，报表生成中会有广泛的应用。
+
+
+\section{Python打开文件Excel文件}
+
+\end{document}
